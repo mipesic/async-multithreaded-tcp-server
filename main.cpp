@@ -72,7 +72,6 @@ private:
             boost::asio::post(_workers, [new_connection]() {
                 new_connection->start();
             });
-            new_connection->start();
         }
         start_accept();
     }
